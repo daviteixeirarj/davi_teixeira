@@ -1,5 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Moon+Dance&display=swap');
+
+:root {
+    --background: #020F1B;
+    --azul1: #153e62;
+    --azul2: #0b2545;
+    --azul3: #002a50;
+    --azul4: #005a8d;
+    --azul5: #147290;
+    --azul6: #4ed4e1;
+    --azul7: #dffbfe;
+    --cinza: #e5eaf0;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+html, body{
+    height: 100%;
+    background-color: var(--background);
+}
+
+header{
+    height: 10vh;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    height: 100%;
+}
+
+#menu, #ferramentas, #contatos{
+    display: flex;
+    gap: 1rem;
+}
+
+#menu{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li:hover{
+    transition: .6s;
+    border-bottom: 1px solid var(--azul6);
+    font-size: 1.3rem;
+}
+
+main{
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sec1{
+    padding-left: 2rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.destaque{
+    color: var(--azul6);
+}
+
+#sobre, #sec1 p{
+    font-size: 1.5rem;
+}
+
+#sec2{
+    align-items: center;
+}
+
+#eu{
+    width: 50%;
+}
+
+blockquote{
+    font-style: italic;
+    border-left: 1px solid var(--azul6); /* Cor da borda esquerda */
+    padding: 10px; /* Espaçamento interno */
+}
+
+#credito{
+    font-size: 1rem;
+    align-self: self-start;
 }
