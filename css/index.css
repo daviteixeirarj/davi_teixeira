@@ -113,3 +113,26 @@ blockquote{
     font-size: 1rem;
     align-self: self-start;
 }
+
+#contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+#sec2 p{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-icon{
+    width: 2.5rem;
+    transition: .6s;
+}
+
+.contact-icon:hover{
+    width: 2.7rem;
+    scale: 1.1;
+}
