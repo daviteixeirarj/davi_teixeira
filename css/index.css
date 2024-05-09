@@ -30,7 +30,7 @@ html, body{
 
 header{
     height: 10vh;
-    padding: 0 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
