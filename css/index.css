@@ -95,6 +95,14 @@ h1{
     font-size: 1.5rem;
 }
 
+#ferramentas{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #sec2{
     align-items: center;
 }
@@ -127,7 +135,7 @@ blockquote{
     font-size: 2rem;
 }
 
-.contact-icon{
+.contact-icon, .skill-icon{
     width: 2.5rem;
     transition: .6s;
 }
