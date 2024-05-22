@@ -30,19 +30,14 @@ html, body{
 
 header{
     height: 10vh;
-    margin-top: .5rem;
-    padding: 0 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo{
-    width: fit-content;
-}
-
 nav{
-    height: fit-content;
+    height: 100%;
 }
 
 #ferramentas, #contatos{
@@ -52,8 +47,7 @@ nav{
 
 #menu{
     height: 100%;
-    padding: 1.5rem 0;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
