@@ -96,11 +96,21 @@ h1{
 }
 
 #ferramentas{
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#ferramentas li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon{
+    width: 70%;
 }
 
 #sec2{
@@ -135,7 +145,7 @@ blockquote{
     font-size: 2rem;
 }
 
-.contact-icon, .skill-icon{
+.contact-icon{
     width: 2.5rem;
     transition: .6s;
 }
