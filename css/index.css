@@ -53,6 +53,7 @@ nav{
 
 #menu li{
     height: 100%;
+    padding: 2rem 0;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -65,8 +66,21 @@ nav{
     font-size: 1.3rem;
 }
 
+#curriculo{
+    padding: 1rem;
+    border-radius: .5rem;
+    background-image: linear-gradient(to right, var(--azul4), var(--azul3));
+    color: var(--azul7);
+}
+
+#curriculo:hover{
+    background-image: linear-gradient(to right, var(--azul3), var(--azul4));
+    color: var(--azul6);
+}
+
 main{
     height: 85%;
+    padding-top: 2rem;
     display: grid;
     grid-template-areas: "sec1 sec2";
     justify-content: space-around;
