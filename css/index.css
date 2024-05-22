@@ -40,20 +40,22 @@ nav{
     height: 100%;
 }
 
-#menu, #ferramentas, #contatos{
+#ferramentas, #contatos{
     display: flex;
     gap: 1rem;
 }
 
 #menu{
     height: 100%;
+
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #menu li{
     height: 100%;
-    padding: 2rem 0;
+    padding: 2rem .5rem;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -74,6 +76,7 @@ nav{
 }
 
 #curriculo:hover{
+    transition: .1s;
     background-image: linear-gradient(to right, var(--azul3), var(--azul4));
     color: var(--azul6);
 }
