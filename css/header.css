@@ -1,5 +1,4 @@
 header{
-    height: 10vh;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -10,28 +9,23 @@ header{
     width: max(40px, 6vw);
 }
 
-nav{
-    height: 100%;
-}
-
-#menu{
-    height: 100%;
-    
+#extranav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#menu li{
-    height: 100%;
+
+#menu{
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #menu a{
-    padding: 2rem 1rem;
-    font-size: 1.2rem;
+    padding: 1rem;
+    font-size: max(1.5vw, 15px);
 }
 
 #menu a:hover{
@@ -41,13 +35,16 @@ nav{
 }
 
 #curriculo{
+    padding: 1rem;
     border-radius: .5rem;
     background-image: linear-gradient(to right, var(--azul4), var(--azul3));
+    font-size: max(1.7vw, 20px);
     color: var(--azul7);
 }
 
 #curriculo:hover{
-    transition: .1s;
+    transition: .3s;
     background-image: linear-gradient(to right, var(--azul3), var(--azul4));
     color: var(--azul6);
+    scale: 1.2;
 }

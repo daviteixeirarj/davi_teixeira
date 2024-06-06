@@ -2,6 +2,7 @@
     width: 50vw;
     grid-area: 'sec2';
 
+    justify-content: space-around;
     align-items: center;
 }
 

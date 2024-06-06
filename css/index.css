@@ -3,6 +3,7 @@
 @import './header.css';
 @import './sec1.css';
 @import './sec2.css';
+@import './mq-745.css';
 
 :root {
     --background: #020F1B;
@@ -33,7 +34,7 @@ html, body{
 }
 
 main{
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: grid;
     grid-template-areas: "sec1 sec2";
 }
