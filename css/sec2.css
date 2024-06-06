@@ -1,4 +1,5 @@
 #sec2{
+    width: 50vw;
     grid-area: 'sec2';
 
     align-items: center;
@@ -26,8 +27,6 @@ blockquote{
     justify-content: center;
     align-items: center;
     padding: .5rem 0;
-
-    background-color: red;
 }
 
 #sec2 p{
@@ -37,7 +36,7 @@ blockquote{
 }
 
 .contact-icon{
-    width: 2.5rem;
+    width: max(35px, 3.5vw);
     transition: .6s;
 }
 

@@ -3,11 +3,13 @@
     width: 50vw;
     padding-left: .5rem;
 
+    gap: .5rem;
     align-items: center;
 
 }
 
 h1{
+    padding-bottom: 1rem;
     font-size: 5.5vw;
     font-weight: 300;
     align-self: flex-start;
@@ -20,16 +22,12 @@ h1{
 }
 
 #ferramentas{
-    width: 100%;
     display: flex;
-}
+    gap: 1rem;
 
-#ferramentas li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .skill-icon{
-    width: 2.5rem;
+    width: max(35px, 5vw);
+    height: 3.5rem;
 }

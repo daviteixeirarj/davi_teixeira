@@ -6,7 +6,9 @@ header{
     align-items: center;
 }
 
-#logo{}
+#logo{
+    width: max(40px, 6vw);
+}
 
 nav{
     height: 100%;
