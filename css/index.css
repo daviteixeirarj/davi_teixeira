@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Moon+Dance&display=swap');
 
+@import './header.css';
+@import './sec1.css';
+@import './sec2.css';
+
 :root {
     --background: #020F1B;
     --azul1: #153e62;
@@ -28,150 +32,17 @@ html, body{
     background-color: var(--background);
 }
 
-header{
-    height: 10vh;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav{
-    height: 100%;
-}
-
-#ferramentas, #contatos{
-    display: flex;
-    gap: 1rem;
-}
-
-#menu{
-    height: 100%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu li{
-    height: 100%;
-    padding: 2rem .5rem;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu li:hover{
-    transition: .6s;
-    border-bottom: 1px solid var(--azul6);
-    font-size: 1.3rem;
-}
-
-#curriculo{
-    padding: 1rem;
-    border-radius: .5rem;
-    background-image: linear-gradient(to right, var(--azul4), var(--azul3));
-    color: var(--azul7);
-}
-
-#curriculo:hover{
-    transition: .1s;
-    background-image: linear-gradient(to right, var(--azul3), var(--azul4));
-    color: var(--azul6);
-}
-
 main{
-    height: 85%;
     padding-top: 2rem;
     display: grid;
     grid-template-areas: "sec1 sec2";
-    justify-content: space-around;
 }
 
 section{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-#sec1{
-    padding-left: 2rem;
-
-    grid-area: 'sec1';
-}
-
-h1{
-    font-size: 4rem;
-    font-weight: 300;
 }
 
 .destaque{
     color: var(--azul6);
-}
-
-#sobre, #sec1 p{
-    font-size: 1.5rem;
-}
-
-#ferramentas{
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#ferramentas li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-icon{
-    width: 70%;
-}
-
-#sec2{
-    align-items: center;
-
-    grid-area: 'sec2';
-}
-
-#eu{
-    width: 50%;
-}
-
-blockquote{
-    font-style: italic;
-    border-left: 1px solid var(--azul6); /* Cor da borda esquerda */
-    padding: 10px; /* Espaçamento interno */
-}
-
-#credito{
-    font-size: 1rem;
-    align-self: self-start;
-}
-
-#contatos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem 0;
-}
-
-#sec2 p{
-    text-align: center;
-    padding-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.contact-icon{
-    width: 2.5rem;
-    transition: .6s;
-}
-
-.contact-icon:hover{
-    width: 2.7rem;
-    scale: 1.1;
 }

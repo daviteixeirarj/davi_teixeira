@@ -1,0 +1,46 @@
+#sec2{
+    grid-area: 'sec2';
+
+    align-items: center;
+}
+
+#eu{
+    width: 20vw;
+}
+
+blockquote{
+    font-style: italic;
+    font-size: 1.5vw;
+    border-left: 1px solid var(--azul6); /*Cor da borda esquerda*/
+    padding: 10px; /*Espaçamento interno*/
+}
+
+#credito{
+    font-size: 1rem;
+    align-self: self-start;
+}
+
+#contatos{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+
+    background-color: red;
+}
+
+#sec2 p{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2vw;
+}
+
+.contact-icon{
+    width: 2.5rem;
+    transition: .6s;
+}
+
+.contact-icon:hover{
+    scale: 1.5;
+}

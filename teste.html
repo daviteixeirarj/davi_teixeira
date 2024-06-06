@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover CSS</title>
+    <style>
+        .hover-element {
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        .target-element {
+            padding: 10px;
+            background-color: lightcoral;
+            visibility: hidden; /* Inicialmente oculto */
+        }
+
+        .hover-element:hover + .target-element {
+            visibility: visible; /* Visível quando hover no elemento anterior */
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-element">Passe o mouse aqui</div>
+    <div class="target-element">Elemento alvo</div>
+</body>
+</html>

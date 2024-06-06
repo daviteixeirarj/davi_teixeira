@@ -1,0 +1,35 @@
+#sec1{
+    grid-area: 'sec1';
+    width: 50vw;
+    padding-left: .5rem;
+
+    align-items: center;
+
+}
+
+h1{
+    font-size: 5.5vw;
+    font-weight: 300;
+    align-self: flex-start;
+}
+
+#sobre, #sec1 p{
+    padding-bottom: 1rem;
+    font-size: 2vw;
+    align-self: flex-start;
+}
+
+#ferramentas{
+    width: 100%;
+    display: flex;
+}
+
+#ferramentas li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon{
+    width: 2.5rem;
+}
