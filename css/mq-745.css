@@ -1,0 +1,173 @@
+@media (max-width: 745px){
+    body{
+        overflow-x: clip;
+    }
+
+    /* Header: logo e currículo na primeira linha, menu abaixo */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem 1rem;
+        padding: 1rem;
+    }
+
+    #logo{
+        width: 48px;
+    }
+
+    #curriculo{
+        padding: .6rem 1rem;
+        font-size: 1rem;
+    }
+
+    #curriculo:hover{
+        scale: 1.05;
+    }
+
+    header nav{
+        order: 3;
+        width: 100%;
+    }
+
+    #menu{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #menu a::after{
+        left: .5rem;
+        right: .5rem;
+        bottom: .3rem;
+    }
+
+    #menu a{
+        display: block;
+        padding: .6rem .5rem;
+        font-size: 1rem;
+    }
+
+    /* Layout principal em coluna única */
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sec1"
+            "sec2";
+        gap: 2rem;
+        padding: 1rem 1.25rem 0;
+    }
+
+    #sec1, #sec2{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #sec1{
+        align-items: center;
+        text-align: center;
+    }
+
+    h1, #sobre, #subtitulo, #sec1 p{
+        align-self: center;
+        text-align: center;
+    }
+
+    h1{
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+    }
+
+    #sobre, #subtitulo, #sec1 p, #sec2 p{
+        font-size: 1.1rem;
+    }
+
+    #ferramentas, #contatos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-icon{
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-icon{
+        width: 28px;
+    }
+
+    #eu{
+        width: min(85vw, 360px);
+        height: auto;
+    }
+
+    blockquote{
+        font-size: 1.05rem;
+        width: 100%;
+    }
+
+    #credito{
+        font-size: .9rem;
+    }
+
+    /* Projetos */
+    #projetos{
+        padding: 2rem 1.25rem;
+    }
+
+    #projetos h2{
+        text-align: center;
+    }
+
+    .cta-grupo{
+        gap: .6rem;
+    }
+
+    .cta-grupo .btn-cta{
+        padding: .8rem .5rem;
+        font-size: .95rem;
+    }
+
+    .btn-wpp{
+        gap: .4rem;
+    }
+
+    .carrossel{
+        gap: 1rem;
+    }
+
+    .carrossel-nav{
+        gap: .75rem;
+    }
+
+    #cards-projetos{
+        --por-vista: 1.4;
+    }
+
+    #cards-projetos .card{
+        min-width: 0;
+    }
+
+    .carrossel-btn{
+        width: 1.4rem;
+        height: 1.4rem;
+        font-size: .75rem;
+    }
+
+    /* Contato */
+    #contato{
+        padding: 2rem 1.25rem 3rem;
+    }
+
+    .contato-form{
+        padding: 1.25rem;
+    }
+
+    .form-linha-2,
+    .radio-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .btn-enviar{
+        width: 100%;
+    }
+}

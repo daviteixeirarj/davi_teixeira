@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import './header.css';
 @import './sec1.css';
 @import './sec2.css';
+@import './projetos.css';
+@import './contato.css';
 @import './mq-745.css';
 
 :root {
@@ -28,14 +30,40 @@
     color: var(--cinza);
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
+/* Fundo fixo em camada própria (rola sem repintar os gradientes a cada frame) */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(ellipse 45% 55% at 75% 40%, rgba(78, 212, 225, 0.12), transparent 70%),
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(0, 90, 141, 0.18), transparent 70%),
+        linear-gradient(rgba(223, 251, 254, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(223, 251, 254, 0.04) 1px, transparent 1px);
+    background-size: auto, auto, 48px 48px, 48px 48px;
+    transform: translateZ(0);
+}
+
 html, body{
-    height: 100%;
+    min-height: 100%;
+}
+
+html{
     background-color: var(--background);
 }
 
 main{
-    padding-top: 1rem;
+    padding: 1rem clamp(1.5rem, 5vw, 5rem) 0;
     display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "sec1 sec2";
 }
 
@@ -46,4 +74,23 @@ section{
 
 .destaque{
     color: var(--azul6);
+}
+/* Brilho que acompanha o cursor (criado por js/cursor.js) */
+.cursor-glow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 420px;
+    z-index: 9999;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(78, 212, 225, 0.16) 0%, rgba(78, 212, 225, 0.06) 35%, transparent 70%);
+    opacity: 0;
+    transition: opacity .4s;
+    will-change: transform;
+}
+
+.cursor-glow.visivel{
+    opacity: 1;
 }

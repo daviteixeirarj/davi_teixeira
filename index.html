@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +10,35 @@
     <body>
         <header>
             <img src="imgs/logo.svg" alt="DT." id="logo">
-            <a href="files/curriculo/DAVI TEIXEIRA.pdf" target="_blank" id="curriculo">Currículo.pdf</a>
                 <nav>
                     <ul id="menu">
-                        <li><a href="">Projetos</a></li>
-                        <li><a href="">Certificados</a></li>
-                        <li><a href="">Contato</a></li>
-                        <li><a href="">Sobre</a></li>
+                        <li><a href="#sec1">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <!-- TEMPORARIAMENTE OCULTO: reativar o item "Certificados" quando a seção #certificados for criada.
+                        <li><a href="#certificados">Certificados</a></li>
+                        -->
                     </ul>
                 </nav>
+            <a href="files/curriculo/davi-teixeira-cv.pdf" target="_blank" id="curriculo">Currículo.pdf</a>
         </header>
         <main>
             <section id="sec1">
                 <h1><span class="destaque">D</span>avi <span class="destaque">T</span>eixeira</h1>
-                <ul id="sobre">
-                    <li>Entusiasta de <span class="destaque">Dados</span></li>
-                    <li>Tecnologia em Sist. da Computação (UFF-RJ)</li>
-                    <li>Física (UERJ)</li>
-                    <li>Instrutor de Física</li>
-                </ul>
+                <h2 id="subtitulo"><span class="destaque">Dados</span>, <span class="destaque">Business Intelligence</span> &amp; <span class="destaque">Desenvolvimento Web</span> | ADS</h2>
                 <p>
-                    Atualmente, à procura da tão sonhada primeira vaga na área de <span class="destaque">Ciência de Dados</span> e <span class="destaque">Analytics</span>
+                    Atuação prática com bancos de dados, ETL e transformação de dados brutos em relatórios, dashboards e interfaces claras para apoiar decisões de negócio.
                 </p>
-                <p>
-                    Disponível para montar <span class="destaque">Relatórios</span> e <span class="destaque">Dashboards</span> para <span class="destaque">Suas Análises</span>!
-                </p>
+                <div class="cta-grupo">
+                    <a href="#projetos" class="btn-cta">Ver Projetos</a>
+                    <a href="https://wa.me/5521991357964?text=Ol%C3%A1%2C%20Davi!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" class="btn-cta btn-wpp">
+                        <img src="imgs/icons/wpp.svg" alt="" class="wpp-icon">
+                        Falar no WhatsApp
+                    </a>
+                </div>
                 <div id="skills">
                     <ul id="ferramentas">
-                        <li><img src="imgs/icons/pbi.svg" alt="PBI" class="skill-icon" id="#pbi"></li>
+                        <li><img src="imgs/icons/pbi.svg" alt="PBI" class="skill-icon" id="pbi"></li>
                         <li><img src="imgs/icons/python.svg" alt="PYTHON" class="skill-icon"></li>
                         <li><img src="imgs/icons/bd.svg" alt="SQL" class="skill-icon"></li>
                         <li><img src="imgs/icons/excel.svg" alt="XL" class="skill-icon"></li>
@@ -46,13 +47,13 @@
                 </div>
             </section>
             <section id="sec2">
-                <img id="eu" src="imgs/eu.png" alt="Eu">
+                <img id="eu" src="imgs/eu2.png" alt="Eu">
                 <blockquote>
-                    "Sem <span class="destaque">dados</span> você é apenas mais uma pessoa com uma opnião"
+                    "Sem <span class="destaque">dados</span> você é apenas mais uma pessoa com uma opinião"
                     <footer id="credito">- W. Edwards Deming (Pai da Qualidade Total)</footer>
                 </blockquote>
-                <p>Fale Comigo agora mesmo!</p>
-                <div id="contato">
+                <p>Fale comigo agora mesmo!</p>
+                <div class="contato-redes">
                     <ul id="contatos">
                         <li>
                             <a href="https://www.linkedin.com/in/davi-teixeira-55318b239/" target="_blank">
@@ -81,5 +82,163 @@
                 </div>
             </section>
         </main>
+        <section id="projetos">
+            <h2>Meus <span class="destaque">Projetos</span></h2>
+            <div class="carrossel">
+                <div class="carrossel-tracos" aria-hidden="true"></div>
+                <div id="cards-projetos">
+                <article class="card">
+                    <div class="card-preview"><span>Preview em breve</span></div>
+                    <div class="card-corpo">
+                        <h3>Dashboard de BI (Power BI)</h3>
+                        <p>Painel executivo com foco em KPIs e visualização clara dos principais indicadores do negócio, pronto para apoiar a tomada de decisão.</p>
+                        <ul class="tags">
+                            <li>Power BI</li>
+                            <li>DAX</li>
+                            <li>KPIs</li>
+                        </ul>
+                        <div class="card-acoes">
+                            <!-- TODO: inserir o link real do projeto (Power BI publicado / demo) -->
+                            <a href="#" class="btn btn-primario">Ver Projeto</a>
+                            <!-- TODO: inserir o link real do repositório no GitHub -->
+                            <a href="#" class="btn btn-secundario">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-preview"><span>Preview em breve</span></div>
+                    <div class="card-corpo">
+                        <h3>Pipeline de Dados &amp; Modelagem (SQL / ETL)</h3>
+                        <p>Tratamento e carga de dados, modelagem de banco e consultas otimizadas para entregar uma base confiável para análises.</p>
+                        <ul class="tags">
+                            <li>SQL</li>
+                            <li>ETL</li>
+                            <li>Modelagem</li>
+                        </ul>
+                        <div class="card-acoes">
+                            <!-- TODO: inserir o link real do projeto -->
+                            <a href="#" class="btn btn-primario">Ver Projeto</a>
+                            <!-- TODO: inserir o link real do repositório no GitHub -->
+                            <a href="#" class="btn btn-secundario">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-preview"><span>Preview em breve</span></div>
+                    <div class="card-corpo">
+                        <h3>Análise Exploratória &amp; Automação (Python)</h3>
+                        <p>Scripts de análise exploratória e tratamento de dados, automatizando rotinas repetitivas e gerando insights de forma reproduzível.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Automação</li>
+                        </ul>
+                        <div class="card-acoes">
+                            <!-- TODO: inserir o link real do projeto -->
+                            <a href="#" class="btn btn-primario">Ver Projeto</a>
+                            <!-- TODO: inserir o link real do repositório no GitHub -->
+                            <a href="#" class="btn btn-secundario">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-preview"><span>Preview em breve</span></div>
+                    <div class="card-corpo">
+                        <h3>Landing Page</h3>
+                        <p>Página de conversão responsiva, com foco em clareza da mensagem, chamadas para ação e carregamento rápido.</p>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Responsivo</li>
+                        </ul>
+                        <div class="card-acoes">
+                            <!-- TODO: inserir o link real do site no ar -->
+                            <a href="#" class="btn btn-primario">Ver Projeto</a>
+                            <!-- TODO: inserir o link real do repositório no GitHub -->
+                            <a href="#" class="btn btn-secundario">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-preview"><span>Preview em breve</span></div>
+                    <div class="card-corpo">
+                        <h3>Site Institucional</h3>
+                        <p>Site institucional completo, com identidade visual do cliente, páginas organizadas e layout adaptado a qualquer tela.</p>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Figma</li>
+                        </ul>
+                        <div class="card-acoes">
+                            <!-- TODO: inserir o link real do site no ar -->
+                            <a href="#" class="btn btn-primario">Ver Projeto</a>
+                            <!-- TODO: inserir o link real do repositório no GitHub -->
+                            <a href="#" class="btn btn-secundario">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                </div>
+                <div class="carrossel-nav">
+                    <button type="button" class="carrossel-btn carrossel-prev" aria-label="Projetos anteriores">&#10094;</button>
+                    <div class="carrossel-dots" aria-label="Navegação dos projetos"></div>
+                    <button type="button" class="carrossel-btn carrossel-next" aria-label="Próximos projetos">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Entre em <span class="destaque">Contato</span></h2>
+            <p class="contato-subtitulo">
+                Tem uma demanda de Dados, BI ou precisa de um site? <br> Envie sua mensagem abaixo e retorno o quanto antes.
+            </p>
+            <form action="https://formsubmit.co/daviteixeirap.faria@gmail.com" method="POST" class="contato-form">
+                <input type="hidden" name="_subject" value="Novo contato pelo Portfólio — Davi Teixeira">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="true">
+
+                <div class="form-campo">
+                    <label for="contato-nome">Nome</label>
+                    <input type="text" id="contato-nome" name="Nome" required placeholder="Seu nome">
+                </div>
+
+                <div class="form-linha-2">
+                    <div class="form-campo">
+                        <label for="contato-email">E-mail</label>
+                        <input type="email" id="contato-email" name="E-mail" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-campo">
+                        <label for="contato-wpp">WhatsApp / Telefone</label>
+                        <input type="tel" id="contato-wpp" name="WhatsApp" placeholder="(21) 99999-9999">
+                    </div>
+                </div>
+
+                <fieldset class="tipo-projeto">
+                    <legend>O que você precisa?</legend>
+                    <div class="radio-grid">
+                        <label class="radio-card">
+                            <input type="radio" name="Tipo_de_Projeto" value="Dados, BI & Dashboards" checked required>
+                            <span>Dados, BI &amp; Dashboards</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="Tipo_de_Projeto" value="Site / Landing Page" required>
+                            <span>Site / Landing Page</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="Tipo_de_Projeto" value="Recrutamento / Outro assunto" required>
+                            <span>Recrutamento / Outro assunto</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-campo">
+                    <label for="contato-msg">Mensagem</label>
+                    <textarea id="contato-msg" name="Mensagem" rows="4" required placeholder="Conte um pouco sobre o projeto, prazo ou necessidade..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </section>
+        <script src="js/carrossel.js"></script>
+        <script src="js/cursor.js"></script>
+        <script src="js/nav-ativo.js"></script>
     </body>
 </html>

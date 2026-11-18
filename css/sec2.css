@@ -1,18 +1,24 @@
 #sec2{
-    width: 50vw;
-    grid-area: 'sec2';
+    width: 100%;
+    grid-area: sec2;
 
     justify-content: space-around;
     align-items: center;
 }
 
 #eu{
-    width: 20vw;
+    width: auto;
+    max-width: 100%;
+    height: clamp(200px, 45vh, 400px);
+    object-fit: contain;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 251, 254, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 60px rgba(78, 212, 225, 0.18);
 }
 
 blockquote{
     font-style: italic;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     border-left: 1px solid var(--azul6); /*Cor da borda esquerda*/
     padding: 10px; /*Espaçamento interno*/
 }
@@ -32,15 +38,15 @@ blockquote{
 
 #sec2 p{
     text-align: center;
-    padding-bottom: 1rem;
-    font-size: 2vw;
+    padding-bottom: .5rem;
+    font-size: clamp(1rem, 1.8vw, 1.4rem);
 }
 
 .contact-icon{
-    width: max(35px, 3.5vw);
-    transition: .6s;
+    width: max(24px, 2.3vw);
+    transition: .4s;
 }
 
 .contact-icon:hover{
-    scale: 1.5;
+    scale: 1.2;
 }
